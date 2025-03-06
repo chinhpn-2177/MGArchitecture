@@ -14,15 +14,15 @@ let package = Package(
             targets: ["MGArchitecture"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.1.0")
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.1.3")
     ],
     targets: [
         .target(
             name: "MGArchitecture",
             dependencies: [
                 .product(name: "RxSwift", package: "RxSwift"),
-                .product(name: "RxSwift", package: "RxTest"),
-                .product(name: "RxSwift", package: "RxBlocking"),
+                .product(name: "RxTest", package: "RxSwift"),
+                .product(name: "RxBlocking", package: "RxSwift"),
                 .product(name: "RxCocoa", package: "RxSwift")
             ],
             path: "MGArchitecture/Sources"
