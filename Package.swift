@@ -21,6 +21,8 @@ let package = Package(
             name: "MGArchitecture",
             dependencies: [
                 .product(name: "RxSwift", package: "RxSwift"),
+                .product(name: "RxSwift", package: "RxTest"),
+                .product(name: "RxSwift", package: "RxBlocking"),
                 .product(name: "RxCocoa", package: "RxSwift")
             ],
             path: "MGArchitecture/Sources"
